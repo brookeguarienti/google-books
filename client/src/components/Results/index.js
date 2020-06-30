@@ -12,6 +12,8 @@ class Results extends Component {
   }
 
   handleSave = (book) => {
+    console.log(book);
+    
     if (this.state.savedBooks.map((book) => book._id).includes(book._id)) {
       API.deleteBook(book._id)
         .then((deletedBook) =>
@@ -21,7 +23,7 @@ class Results extends Component {
             ),
           })
         )
-        .catch((err) => console.err(err));
+        .catch((err) => console.log(err));
     } else {
       API.saveBook(book)
         .then((savedBook) =>
@@ -29,13 +31,12 @@ class Results extends Component {
             savedBooks: this.state.savedBooks.concat([savedBook]),
           })
         )
-        .catch((err) => console.err(err));
+        .catch((err) => console.log(err));
     }
   };
 
   render() {
-    if (!this.props.books)
-    return(null)
+    if (!this.props.books) return null;
     return (
       <div>
         {!this.props.books.length ? (

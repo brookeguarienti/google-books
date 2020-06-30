@@ -43,7 +43,6 @@ class Search extends React.Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    debugger;
     this.searchBook(this.state.search);
   };
 
