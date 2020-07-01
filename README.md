@@ -4,6 +4,8 @@ This is a React-based Google Books Search app that uses React component, utl fun
 ### Check out the live link here:
 https://google-books-bag.herokuapp.com/
 
+<img src= "client/public/assets/Google Books Search.gif">
+
 ### How to use the app
 The user will search for a book title in the search bar.
 
