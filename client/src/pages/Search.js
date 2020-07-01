@@ -18,7 +18,8 @@ class Search extends React.Component {
       title: bookData.volumeInfo.title,
       authors: bookData.volumeInfo.authors,
       description: bookData.volumeInfo.description,
-      image: bookData.volumeInfo.imageLinks.thumbnail,
+      // if no image exists then use placeholder
+      image: bookData.volumeInfo.imageLinks === undefined ? " -url- " : bookData.volumeInfo.imageLinks.thumbnail,
       link: bookData.volumeInfo.previewLink,
     };
   };

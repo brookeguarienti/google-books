@@ -1,3 +1,37 @@
+# Google Books Search 
+This is a React-based Google Books Search app that uses React component, utl functions, React lifecycle methods to query and display books based on user searches. Node, Express, and MongoDB for users to save books to review or purchase later.
+
+### Check out the live link here:
+https://google-books-bag.herokuapp.com/
+
+### How to use the app
+The user will search for a book title in the search bar.
+
+The search will return 10 books which best match the title.
+
+The user is able to save or view the books displayed by selecting the view button or save button.
+
+The user can check out saved books by selecting the saved tab in the upper right corner.
+
+The user can remove a saved book from the list by selecting the unsave button.
+
+### Technologies used
+Javascript
+React
+Node
+Express
+MongoDB
+Mongoose
+HTML
+Git
+GitHub
+
+### Author
+Brooke Guarienti
+
+
+## To learn more about creating a React App, read below
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
